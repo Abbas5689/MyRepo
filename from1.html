@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="from1.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend>
+                <h2>REGISTRATION FORM</h2>
+            </legend>
+
+            <form action="mailto:abbasianas376@gmail.com" method="post" enctype="text/plain">
+                <!-- Name -->
+                <div id="1">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="eg . Anas" required>
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="eg . Khan" required>
+                </div>
+                <!-- contact info -->
+                <div id="2">
+                    <label for="contact">Contact no.</label>
+                    <input type="number" pattern="[0-9.+]{13}" placeholder="+923301234567" required>
+                </div>
+                <!-- color -->
+                <div id="3">
+                    <label for="color">What's your favourite color</label>
+                    <br>
+                    <input type="color">
+                </div>
+                <!-- DOB -->
+                <div id="4">
+                    <label for="DOB">Date of Birth</label>
+                    <input type="date" >
+                </div>
+                <!-- email -->
+                <div id="5">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@hotmail.com" required>
+                </div>
+                <!-- password -->
+                <div id="6">
+                    <label for="pass">Password</label>
+                    <input type="password" name="password" id="password" placeholder="12345678" minlength="8" required>
+                </div>
+                <!-- upload -->
+                <div id="7">
+                    <label for="file">Upload file</label>
+                    <input type="file" multiple>
+                </div>
+                <!-- pattern -->
+                <div id="8">
+                    <label for="code">Enter your Country Code</label>
+                    <input type="text" pattern="[A-Za-z]{4}">
+                </div>
+                <!-- gender  -->
+                <div id="9">
+                    <span>Gender :</span>
+                    <label for="male">Male</label>
+                    <input type="radio" name="Gender" id="male" value="male" required>
+                    <label for="fmale">Female</label>
+                    <input type="radio" name="Gender" id="fmale" value="fmale" required>
+                </div>
+                <!-- city -->
+                <div id="10">
+                    <label for="city">Select your City :</label>
+                    <select name="city" id="city" required>
+                        <option value="" disabled selected>---Select---</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="islamabad">Islamabad</option>
+                    </select>
+                </div>
+                <!--checkbox  -->
+                <div id="11">
+                    <input type="checkbox" id="check" required>
+                    <label for="check">I agree to the above information.</label>
+                </div>
+                <!-- comments -->
+                <div id="12">
+                    <label for="comments"></label>
+                    <br>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Any suggestions...."></textarea>
+                </div>
+                <!-- Submit -->
+                <div id="13">
+                    
+                    <input type="submit">
+                
+                <!-- reset -->
+                
+                    <input type="reset">
+                </div>
+                
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>
